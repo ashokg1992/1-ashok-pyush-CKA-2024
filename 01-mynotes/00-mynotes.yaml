@@ -60,3 +60,12 @@
 - k get csr  # it shows status of csr 
 - k get csr adam -o yaml > issuecert.yaml # 
 - 
+
+- by default all certificates ae placed in cluster in this path /etc/kubernetes/pki
+- kubectl auth can-i get pod #  it tells  am i access or not
+- kubectl auth whoami #  which user you are 
+- kubectl auth can-i get pod as --adam  #  it tells  user has what access or not to the pods access
+- k get roles -A # to see all roles in namespace
+- k get roles -A --no-headers | wc -l  # it removes headers and give total roles 
+- 
+

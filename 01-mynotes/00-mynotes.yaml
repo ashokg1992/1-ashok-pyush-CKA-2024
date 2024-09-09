@@ -1,0 +1,58 @@
+
+#in  exam you use vi editor , it gives only it, not vscode , so get use of it and its short cuts
+---
+- command ['sh','-c'] # we running shell comand and sh= shell, -c = command
+- args:[] # we write commands in shell to execute as per requirement
+- # we can seperate both command , arg as shown above . or else we can comabine both "command ['sh','-c',arguments]"
+- 
+
+- kubectl exec -it pod_name --printenv # prints all envrionement values
+
+- kubectl create deploy mydb --image redis --port 80
+- kubectl expose deploy mydb --name mydb --port 80
+
+- k create cm app-cm --from-literal=    # by litral
+- k create cm app-cm --from-file=app/config   # by file
+- 
+
+
+
+
+---
+
+- kubectl run nginx --image=nginx --dry-run=client  
+- kubectl run nginx --image=nginx --dry-run=client -o yaml     # gives yaml foramt
+- kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml   #  Generate spec for running pod nginx and write it into a file called pod.yaml
+- kubectl run nginx --image=nginx --dry-run=client -o json > pod.yaml  # in json format 
+
+- kubectl get pods --show-labels  # Show labels for all pods (or any other Kubernetes object that supports labelling)
+- kubectl get pods pod_name  --show-labels 
+
+
+- kubectl get pods
+- kubectl get pods -o wide  # give all details like in whihc  node it is running and ip of its 
+- kubectl get nodes
+- kubectl get nodes -o wide
+
+- kubectl set image deploy/nginx-deploy nginx=nginx:1.9.1  # by this we can update image in deployment 
+- kubectl set image deployment/frontend www=image:v2               # Rolling update "www" containers of"frontend" deployment, updating the image
+- kubectl rollout history deployment/name             # Check the history of deployments including the revision
+- kubectl rollout undo deployment/frontend                         # Rollback to the previous deployment
+- kubectl rollout undo deployment/frontend --to-revision=2         # Rollback to a specific revision
+- kubectl rollout status -w deployment/frontend                    # Watch rolling update status of "frontend" deployment until completion
+- kubectl rollout restart deployment/frontend                      # Rolling restart of the "frontend" deployment
+- kubectl desccribe rollout deployment/name # gives  info of rooll out
+
+
+- kubectl get pods --show-labels
+
+- kubectl get pods --selector  tier=frontend   # it means we get only pods whihc has front end label 
+- 
+- kubectl node node_name gpu=true:NoSchedule   # to node a tainet 
+- kubectl node node_name gpu=true:NoSchedule- # to untaint 
+- kubectl autoscale deploy deployment_name --cpu-percent=50  --min=1 --max=10  # so that it understand if cpu % is more than 50 % it increse pods , else it maintan one pod
+- kubectl get hpa --watch # we can watach hpa process
+
+- kubectl top node # it lists top rsource modes
+
+

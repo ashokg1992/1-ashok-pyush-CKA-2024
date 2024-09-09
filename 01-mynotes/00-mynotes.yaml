@@ -69,3 +69,14 @@
 - k get roles -A --no-headers | wc -l  # it removes headers and give total roles 
 - 
 
+- kubectl api-resources --namespaced=true  # it gives all resources that are avilable atthe name space leverl
+- kubectl api-resources --namespaced=false  # gives cluster level resources like storage clasess, csi node, csidriver, cluster role, ingress , CRD
+- kubectl get clusterrole 
+
+
+- k get sa -A | grep default 
+- k get sa default -o yaml
+- k create sa sa_name  # to crate service account 
+- k describe sa sa_name
+- 
+

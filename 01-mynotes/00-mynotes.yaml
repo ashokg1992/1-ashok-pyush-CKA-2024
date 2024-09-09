@@ -55,4 +55,8 @@
 
 - kubectl top node # it lists top rsource modes
 
-
+- k describe csr adam # it shows certificate signingg request  raised by  adam/user to admin
+- k certificate approve adam/user # it aprove csr by admin
+- k get csr  # it shows status of csr 
+- k get csr adam -o yaml > issuecert.yaml # 
+- 

@@ -2,7 +2,7 @@
 #in  exam you use vi editor , it gives only it, not vscode , so get use of it and its short cuts
 ---
 
-
+# =============================== some imporant points  ==================
 
 - command ['sh','-c'] # we running shell comand and sh= shell, -c = command
 - args:[] # we write commands in shell to execute as per requirement
@@ -28,9 +28,12 @@
 - k create cm app-cm --from-file=app/config   # by file
 - 
 
+- k exec -it servicename1 --curl servicename2  # by this we can ping anoohter service
+- if we can reach any service with ip but we can not rech it by service name, it menas we have issue wiht DNS , we check for it.
+- 
 
 
-
+# ================================= kubernetes commands meaning ========================
 ---
 
 - kubectl run nginx --image=nginx --dry-run=client  

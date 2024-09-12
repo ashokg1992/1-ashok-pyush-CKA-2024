@@ -17,3 +17,4 @@ Also, could you do the port binding at the cluster level if you are using KIND? 
 ## Blog Post Focus 📝
 
 - **Clarity is essential**: Write your blog post clearly and concisely, making it easy for anyone to grasp the concepts, regardless of their prior Kubernetes experience.
+  

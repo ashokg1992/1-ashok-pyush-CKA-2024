@@ -1,10 +1,23 @@
 
 #in  exam you use vi editor , it gives only it, not vscode , so get use of it and its short cuts
 ---
+
+
+
 - command ['sh','-c'] # we running shell comand and sh= shell, -c = command
 - args:[] # we write commands in shell to execute as per requirement
 - # we can seperate both command , arg as shown above . or else we can comabine both "command ['sh','-c',arguments]"
 - 
+- curl servicename:port 
+- curl nginx:80   // like this we can reach service over api 
+- or else byusing telent we can connecnt it
+           - telnet  service_name port
+           - telent db 3306  
+- 
+
+
+
+
 
 - kubectl exec -it pod_name --printenv # prints all envrionement values
 
@@ -80,3 +93,5 @@
 - k describe sa sa_name
 - 
 
+- k get netpol # to view network polices
+-  

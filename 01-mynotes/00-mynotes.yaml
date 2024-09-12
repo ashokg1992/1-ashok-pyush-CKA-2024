@@ -2,7 +2,7 @@
 #in  exam you use vi editor , it gives only it, not vscode , so get use of it and its short cuts
 ---
 
-# =============================== some imporant points  ==================
+#  =============================== some imporant points  ==================
 
 - command ['sh','-c'] # we running shell comand and sh= shell, -c = command
 - args:[] # we write commands in shell to execute as per requirement
@@ -15,6 +15,8 @@
            - telent db 3306  
 - 
 
+- ls -lt /var/run/netns   # list of namespaces created 
+- ip netns list 
 
 
 

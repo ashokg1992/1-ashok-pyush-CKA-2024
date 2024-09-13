@@ -1,0 +1,35 @@
+
+
+#=============== 1-roles =================
+
+- implementing network policies across services , and restrict network  communication across services 
+- managing storages like pvc , static storage dynamic storage
+
+
+
+# ========================= 1-some issues  =====================================
+ 
+- issue1
+  some times network is not connected to some services beachase network plugin is not compatible with the upgraded versions. 
+
+- issue2
+  sometimes pv, pvc mode is different , then we get a problem while binding pvc with pv evenif we have storage in pv, . because we do not have same mode with pv,pvc
+  ans:  we changed the mode according to pv and apply .
+
+
+
+  
+- issue 4
+  
+
+ 
+# ========================= 1-tasks =====================================
+ 
+- task1 
+  creating different types of laod balancers  by using ingress controller.
+  first we mention in ingress resource file  under the "ingress class type :nignx/kango"  # 
+
+
+
+
+  

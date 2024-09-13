@@ -99,4 +99,6 @@
 - 
 
 - k get netpol # to view network polices
--  
+
+- kubectl get all -A -o yaml   > backup.yaml   #  by this command we can backup of this cluster data
+

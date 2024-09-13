@@ -4,6 +4,12 @@
 
 - implementing network policies across services , and restrict network  communication across services 
 - managing storages like pvc , static storage dynamic storage
+- back up of cluster etcd data
+- upgrade of cluster 
+- managing networking and controllers 
+- manage application failurre  trouble shooting tasks.
+- and also trouble shooting wroker nodes issues.
+- monitoring and loggging of kubernetes clusters
 
 
 
@@ -17,8 +23,6 @@
   ans:  we changed the mode according to pv and apply .
 
 
-
-  
 - issue 4
   
 
@@ -32,4 +36,3 @@
 
 
 
-  

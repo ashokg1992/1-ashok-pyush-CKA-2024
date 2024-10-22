@@ -7,7 +7,7 @@
 - back up of cluster etcd data
 - upgrade of cluster 
 - managing networking and controllers 
-- manage application failurre  trouble shooting tasks.
+- manage application failurre  trouble shooting tasks. 
 - and also trouble shooting wroker nodes issues.
 - monitoring and loggging of kubernetes clusters
 
